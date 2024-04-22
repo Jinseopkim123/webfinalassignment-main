@@ -1,0 +1,22 @@
+/*Platypi font*/
+body {
+    font-family: 'Platypi', sans-serif; 
+    padding: 20px;
+}
+
+.font-example {
+    margin-bottom: 40px;
+}
+
+h1, h2 {
+    font-family: 'Platypi', sans-serif;
+    font-weight: 700;
+}
+
+.weight-example p {
+    margin-bottom: 10px;
+}
+
+.style-example p {
+    margin-bottom: 10px;
+}

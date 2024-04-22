@@ -1,0 +1,289 @@
+    body {
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(to bottom right, #153a53, #ffffff);
+    }
+
+    /*herobanner style*/
+    .hero-banner {
+        background-image: url('../img/herobanner.jpg');
+        background-size: cover;
+        background-position: center;
+        color: #fff;
+        text-align: center;
+        padding: 100px 20px;
+        z-index: 1;
+        position: relative;
+    }
+
+    .hero-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.6);
+        z-index: -1;
+    }
+
+
+        /* navi menu styles */
+        .navigation {
+            background-color: #333;
+        }
+        
+        .navigation ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .navigation li {
+            display: inline;
+            border-bottom: 3px solid transparent;
+        }
+        
+        .navigation a {
+            display: block;
+            padding: 10px 20px;
+            text-decoration: none;
+            color: #fff;
+        }
+        
+        .navigation a:hover {
+            background-color: #ddd;
+            color: #000;
+        }
+        
+        .navigation a.active {
+            background-color: #555;
+        }
+        
+        .navigation a.active:hover {
+            background-color: #888;
+        }
+
+    /*HOMEPAGE SECTION (I wanted to have two different css files for homepage/about organization but ran into problems. sry)*/
+    /*intro text*/
+    .main-content {
+        padding: 20px;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .intro-text {
+        background-color: #f8f8f8;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        margin: 0;
+        font-size: 16px;
+        text-align: center;
+    }
+
+    /* picture cards (BC pics + desc)*/
+    .picture-card-carousel {
+        position: relative;
+        width: 300px;
+        height: auto;
+        overflow: hidden;
+        flex-shrink: 0;
+        border-radius: 8px;
+    }
+
+    .card-slider {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+    }
+
+    .card-slide {
+        position: relative;
+        width: 100%;
+        flex-shrink: 0;
+    }
+
+    .card-slide img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        vertical-align: top;
+    }
+
+    .picture-card-container {
+        display: flex;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+
+    .prev-btn,.next-btn {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        padding: 8px 12px;
+        background-color: rgba(0, 0, 0, 1);
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        z-index: 1;
+    }
+
+    .prev-btn {
+        left: 0;
+    }
+
+    .next-btn {
+        right: 0;
+    }
+
+    .text-box {
+        width: 100%;
+        padding: 20px;
+        background-color: #f8f8f8;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        margin-left: 20px;
+        margin-top: 20px;
+        box-sizing: border-box; 
+        text-align: center;
+    }
+
+    .text-box h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .text-box p {
+        font-size: 16px;
+        color: #666;
+    }
+
+    @media (min-width: 768px) {
+        .text-box {
+            width: calc(100% - 40px);
+            margin-left: 20px;
+            text-align: left;
+        }
+    }
+
+    /*video styling*/
+    .video-container {
+        margin-top: 30px;
+        position: relative;
+        overflow: hidden;
+        padding-top: 56.25%;
+    }
+
+    .video-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: none;
+    }
+
+    /*ABOUT ME STYLING*/
+    .about-me {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+
+    .about-text {
+        width: 60%;
+    }
+
+    .about-image {
+        width: 35%;
+    }
+
+    .about-image img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    .accordion {
+        margin-top: 20px;
+    }
+
+    .accordion-btn {
+        font-family: 'Platypi', sans-serif;
+        background-color: #f0f0f0;
+        color: #333;
+        padding: 10px;
+        width: 100%;
+        text-align: left;
+        border: none;
+        cursor: pointer;
+        outline: none;
+    }
+
+    .accordion-panel {
+        display: none;
+        padding: 10px;
+    }
+
+    .accordion-btn.active {
+        background-color: #ddd;
+    }
+    
+    .accordion-panel.active {
+        display: block;
+    }
+
+    /* FOOTER STYLING */
+    .footer {
+        background-color: #333;
+        color: #fff;
+        padding: 20px 0;
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
+    .footer-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .footer-content p {
+        margin: 0;
+    }
+
+    .footer-links {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .footer-links li {
+        display: inline;
+        margin-right: 20px;
+    }
+
+    .footer-links li:last-child {
+        margin-right: 0;
+    }
+
+    .footer-links a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    @media (max-width: 768px) {
+        .footer-content {
+            flex-direction: column;
+            text-align: center;
+        }
+        
+        .footer-links li {
+            display: block;
+            margin-bottom: 10px;
+        }
+    }
